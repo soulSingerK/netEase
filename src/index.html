@@ -5,34 +5,88 @@
 	<meta name="viewport" content="initial-scale=1.0,width=device-width">
 	<title>仿网易云APP首页</title>
 	<link rel="stylesheet" type="text/css" href="style/common.css">
-	<link rel="stylesheet" type="text/css" href="style/index.css">
-
+	<link rel="stylesheet" type="text/css" href="../dist/style/main.css">
+	<style type="text/css">
+	.icon {
+	   width: 1em; height: 1em;
+	   vertical-align: -0.15em;
+	   fill: currentColor;
+	   overflow: hidden;
+	}
+	.footer{
+		background:  url('images/ft-bg.jpg') repeat-x;
+	}
+	</style>
 </head>
 <body>
 	<div id="app">
 		<!-- 搜索头部 -->
 		<div class="header clearfix">
 			<form class="hd-container">
-				<a href="javascript: void 0;" class='hd-icon hd-icon-left'><i class="iconfont">&#xe700;</i></a>
+				<a href="javascript: void 0;" class='hd-icon hd-icon-left'>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-ic_headset_mic_px"></use>
+					</svg>
+				</a>
 				<div class="hd-search">
 					<input type="text" name="songName" class="hd-input" placeholder="搜索音乐、歌词、电台">
 				</div>
 				<a href="javascript: void 0;" class='hd-icon hd-icon-right'>
-					<i class="iconfont">&#xe661;</i></a>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-paixingbang"></use>
+					</svg>
 				</a>
 			</form>
 		</div>
 
 		<!-- 中间body -->
 		<div class="container">
-			
+			<!-- banner -->
+
 		</div>
 		
-
-		<div classs="footer"></div>
 		<!-- tab底部 -->
+		<div class="footer">
+			<ul class="ft-tabs">
+				<li class="ft-tab">
+					<a href="javascript: void 0;">
+						<div class="ft-tab-bg current-tab">
+							<img src="images/tab1.png">
+						</div>
+						
+						<span class="ft-tab-name">发现</span>
+					</a>
+				</li>
+				<li class="ft-tab">
+					<a href="javascript: void 0;">
+						<div class="ft-tab-bg">
+							<img src="images/tab2.png">
+						</div>
+						<span class="ft-tab-name">我的音乐</span>
+					</a>
+				</li>
+				<li class="ft-tab">
+					<a href="javascript: void 0;">
+						<div class="ft-tab-bg">
+							<img src="images/tab3.png">
+						</div>
+						<span class="ft-tab-name">朋友</span>
+					</a>
+				</li>
+				<li class="ft-tab">
+					<a href="javascript: void 0;">
+						<div class="ft-tab-bg">
+							<img src="images/tab4.png">
+						</div>
+						<span class="ft-tab-name">账号</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 	
 	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+	<script type="text/javascript" src="scripts/lib/iconfont.js"></script>
 </body>
 </html>
