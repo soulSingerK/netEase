@@ -68,3 +68,29 @@ table {
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.border1px {
+        position: relative;
+    }
+    .border1px:after {
+        position: absolute;
+        left: 0;
+        top: -1px;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        content: '';
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        .border1px:after {
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+        .border1px:after {
+            -webkit-transform: scaleY(0.33);
+            transform: scaleY(0.33);
+        }
+    }
